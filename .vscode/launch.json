@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug JS",
+            "program": "${workspaceFolder}/module-form/build/main.js",
+            "sourceMaps": false
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug TS",
+            "program": "${file}",
+            "preLaunchTask": "typescript",
+            "outFiles": [
+                "${workspaceFolder}/**/*.js"
+            ]
+        }
+    ]
+}
